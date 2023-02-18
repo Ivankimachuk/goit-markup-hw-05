@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="./css/styles.css">
     
 </head>
@@ -51,9 +52,9 @@
         <section class="main-section">
 
             <div class="container">
-                <h1 class="main-title">Effective Solutions for Your Business</h1>
+                <h1 class="main-title ">Effective Solutions for Your Business</h1>
                  
-                <button class="main-btn" type="button">Order Service</button>
+                <button class="main-btn"data-modal-open type="button">Order Service</button>
         </div >
         
 
@@ -325,11 +326,11 @@
             
             <!-- FOOTER SOCIAL MEDIA -->
             <div class="media-footer">
-                <h3 class="media-subtitle">Social media</h3>
+                <p class="media-subtitle">Social media</p>
                 <ul class="media-list list">
                     <li class="media-item">
                         <a href="" class="media-link link">
-                            <svg class="media-icon" width="24" height="19"> 
+                            <svg class="media-icon" width="24" height="24"> 
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
@@ -343,14 +344,14 @@
                     </li>
                     <li class="media-item">
                         <a href="" class="media-link link">
-                            <svg class="media-icon" width="24" height="19">
+                            <svg class="media-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="media-item">
                         <a href="" class="media-link link">
-                            <svg class="media-icon" width="24" height="19">
+                            <svg class="media-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
@@ -361,9 +362,20 @@
         </div >
         </footer>        
         
-           
-            
-       
+         <!-- /////////////BACKDROB///////////////////   -->
+        <div class="backdrob is-hidden"data-modal>
+            <div class="modal">
+                <button type="button" class="modal-close"data-modal-close>
+                    <svg class="modal-close-icon" width="8" height="8"> 
+                        <use href="./images/icons.svg#icon-close-black"></use>
+                    </svg>
+
+                </button>
+            </div>
+        </div>
+
+        <!--///////////////// JS///////////////// -->
+        <script src="./JS/modal.js"></script>
    
     
     
